@@ -46,10 +46,10 @@ You can also use individual commands, but note that each command runs in a separ
 
 ```bash
 # List running processes
-./target/release/cheated_cheat_engine list
+./cheated_cheat_engine list
 
 # Attach to a process (shows how to continue in interactive mode)
-./target/release/cheated_cheat_engine attach process_name
+./cheated_cheat_engine attach process_name
 ```
 
 ## Interactive Mode Commands
@@ -67,7 +67,7 @@ You can also use individual commands, but note that each command runs in a separ
 ### Interactive Session Example
 
 ```bash
-$ ./target/release/cheated_cheat_engine interactive
+$ ./cheated_cheat_engine interactive
 > list
 Listing running processes...
   systemd (PID: 1)
@@ -95,7 +95,7 @@ cd test_app
 cargo run
 
 # In another terminal, use the cheat engine to modify its values
-../target/release/cheated_cheat_engine interactive
+../cheated_cheat_engine interactive
 ```
 
 See `test_app/README.md` for detailed instructions on how to use the test application.
