@@ -15,7 +15,7 @@ A simple cheat engine clone written in Rust.
 Make sure you have Rust and Cargo installed. Then clone this repository and build the project:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/streamtechteam/cheated_cheat_engine.git
 cd cheated_cheat_engine
 cargo build --release
 ```
@@ -28,7 +28,7 @@ For the best experience, use the interactive mode which allows you to attach to 
 
 ```bash
 # Start interactive mode
-./target/release/cheated_cheat_engine interactive
+./cheated_cheat_engine interactive
 
 # In interactive mode, you can use these commands:
 # > list                    # List running processes
