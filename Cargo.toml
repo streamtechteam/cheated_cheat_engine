@@ -1,0 +1,27 @@
+[package]
+name = "cheated_cheat_engine"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "cheated_cheat_engine"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cheated_cheat_engine"
+path = "src/main.rs"
+
+[dependencies]
+# For memory manipulation on Windows
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winnt", "memoryapi", "processthreadsapi", "handleapi", "errhandlingapi"] }
+
+# For memory manipulation on Unix-like systems
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+# For command-line interface
+clap = { version = "4.0", features = ["derive"] }
+
+# For better error handling
+anyhow = "1.0"
